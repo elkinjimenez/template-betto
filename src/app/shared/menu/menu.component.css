@@ -1,0 +1,43 @@
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1C2331;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 5px 5px 5px 32px;
+  text-decoration: none;
+  display: block;
+  transition: 0.4s;
+}
+
+.sidebar a:hover {
+  color: #818181;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 7px;
+  right: 2px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.navbar {
+  background-color: #1C2331;
+}
+
+.pointer {
+  cursor: pointer;
+}
